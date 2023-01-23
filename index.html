@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" id="display">
+        <div class="buttons">
+            <button class="function" id="clear" onclick="clearDisplay()">C</button>
+            <button class="function" id="backspace" onclick="backspace()">CE</button>
+            <button class="function" id="divide" onclick="calculate('/')">/</button>
+            <button class="null" id="none"></button>
+            <button class="number" id="seven" onclick="addToDisplay(7)">7</button>
+            <button class="number" id="eight" onclick="addToDisplay(8)">8</button>
+            <button class="number" id="nine" onclick="addToDisplay(9)">9</button>
+            <button class="function" id="multiply" onclick="calculate('*')">*</button>
+            <button class="number" id="four" onclick="addToDisplay(4)">4</button>
+            <button class="number" id="five" onclick="addToDisplay(5)">5</button>
+            <button class="number" id="six" onclick="addToDisplay(6)">6</button>
+            <button class="function" id="subtract" onclick="calculate('-')">-</button>
+            <button class="number" id="one" onclick="addToDisplay(1)">1</button>
+            <button class="number" id="two" onclick="addToDisplay(2)">2</button>
+            <button class="number" id="three" onclick="addToDisplay(3)">3</button>
+            <button class="function" id="add" onclick="calculate('+')">+</button>
+            <button class="number" id="zero" onclick="addToDisplay(0)">0</button>
+            <button class="function" id="decimal" onclick="addToDisplay('.')">.</button>
+            <button class="function" id="equals" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
